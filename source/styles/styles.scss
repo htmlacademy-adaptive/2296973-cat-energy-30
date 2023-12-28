@@ -4,15 +4,29 @@
 @import "./global/fonts.scss";
 
 /* BLOCKS */
+/* index.html */
 @import "./blocks/main-header.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/main-list.scss";
 @import "./blocks/main-content.scss";
 @import "./blocks/offer.scss";
+@import "./blocks/button.scss";
 @import "./blocks/reason.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/example.scss";
 @import "./blocks/slider.scss";
 @import "./blocks/main-footer.scss";
 @import "./blocks/address.scss";
+/* index.html */
+
+/* catalog.html */
+@import "./blocks/catalog.scss";
+@import "./blocks/product.scss";
+@import "./blocks/additional.scss";
+/* catalog.html */
+
+/* form.html */
+@import "./blocks/selection.scss";
+@import "./blocks/label.scss";
+/* form.html */
