@@ -7,6 +7,7 @@
     <link rel="icon" href="favicons/icon.svg" type="images/svg+xml">
     <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles/styles.css">
     <title>CatEnergy</title>
   </head>
 <body>
@@ -46,22 +47,17 @@
         <form class="selection__form" action="https://echo.htmlacademy.ru" method="post">
           <ul class="selection__list">
             <li class="selection__field-group">
-              <span class="selection__form-label">
-                <label class="selection__form-name label" for="appointment-name">Имя:*</label>
-                <input class="selection__form-input input" id="appointment-name" name="name" type="text" value="Барсик">
-              </span>
+              <label class="selection__form-name label" for="appointment-name">Имя:*</label>
+              <input class="selection__form-input input" id="appointment-name" name="name" type="text" value="Барсик">
             </li>
             <li class="selection__field-group">
-              <span class="selection__form-label">
-                <label class="selection__form-name label" for="appointment-weight">Вес (кг):*</label>
-                <input class="selection__form-input input" id="appointment-weight" name="weight" type="number" value="7">
-              </span>
+              <label class="selection__form-name label" for="appointment-weight">Вес (кг):*</label>
+              <input class="selection__form-input input" id="appointment-weight" name="weight" type="number" value="7">
             </li>
             <li class="selection__field-group">
-              <span class="selection__form-label">
-                <label class="selection__form-name label" for="appointment-age">Возраст (лет):</label>
-                <input class="selection__form-input input" id="appointment-age" name="age" type="number" value="7">
-              </span>
+              <label class="selection__form-name label" for="appointment-age">Возраст (лет):</label>
+              <input class="selection__form-input input" id="appointment-age" name="age" type="number" value="7">
+
             </li>
           </ul>
 
@@ -92,16 +88,13 @@
             </legend>
             <ul class="selection__list">
               <li class="selection__item-group">
-                <span class="selection__form-label">
-                  <label class="selection__form-name label" for="appointment-email">E-mail:*</label>
-                  <input class="selection__form-input input" id="appointment-email" name="appointment-name" type="email" value="кuklachev@gmail.com">
-                </span>
+                <label class="selection__form-name label" for="appointment-email">E-mail:*</label>
+                <input class="selection__form-input input" id="appointment-email" name="appointment-name" type="email" value="кuklachev@gmail.com">
+
               </li>
               <li class="selection__item-group">
-                <span class="selection__form-label">
-                  <label class="selection__form-name label" for="appointment-phone">Телефон:*</label>
-                  <input class="selection__form-input input" id="appointment-phone" name="phone" type="tel" value="8 (960) 900-60-90">
-                </span>
+                <label class="selection__form-name label" for="appointment-phone">Телефон:*</label>
+                <input class="selection__form-input input" id="appointment-phone" name="phone" type="tel" value="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
@@ -111,10 +104,8 @@
               Комментарий
             </legend>
             <p class="selection__field-group">
-              <span class="selection__form-label">
-                <label class="selection__form-name label" for="appointment-comment"></label>
-                <textarea class="selection__form-input" id="appointment-comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-              </span>
+              <label class="selection__form-name label" for="appointment-comment"></label>
+              <textarea class="selection__form-text" id="appointment-comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </p>
           </fieldset>
 
