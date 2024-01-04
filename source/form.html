@@ -3,13 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="images/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>CatEnergy</title>
   </head>
 <body>
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo logo" href="#">
-        <img src="images/header/header-logo.svg" width="202" height="59" alt="Логотип сайта cat energy">
+        <img src="images/header/logotype-logo.svg" width="70" height="59" alt="Логотип сайта cat energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -166,7 +170,11 @@
             Санкт-Петербург
           </p>
         </address>
-        <img src="images/main/contacts/map.png" width="1440" height="400" alt="Карта">
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта">
+        </picture>
       </div>
 
       <div class="main-footer__secondary-footer">
