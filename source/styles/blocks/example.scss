@@ -1,28 +1,28 @@
 /* Cтили блока example */
 .example {
-  background-color: #EAEAEA;
-  .example__title {
-    font-size: 36px;
-    line-height: 40px;
-    font-family: $secondary-font;
-  }
-  .example__paragraph {
-    color: $special-dark-grey;
-  }
+  background-color: #eaeaea;
 }
 
-.example__statistics {
-  .example__text {
-    font-size: 12px;
-    line-height: 12px;
-  }
-  .example__quantity {
-    font-family: $secondary-font;
-    font-size: 24px;
-    line-height: 24px;
-    text-transform: uppercase;
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-family: $secondary-font;
+}
 
-  }
+.example__paragraph {
+  color: $special-dark-grey;
+}
+
+.example__text {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__quantity {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
 }
 
 .example__subtitle {
