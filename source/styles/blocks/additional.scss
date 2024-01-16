@@ -1,0 +1,39 @@
+/* Cтили блока additional */
+.additional__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $secondary-font;
+}
+
+.additional__table-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.additional__table-row {
+  list-style: none;
+}
+
+.additional__goods {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
+.additional__package {
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-dark-grey;
+}
+
+.additional__price {
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-dark-grey;
+}
+
+.additional_button {
+  background-color: $basic-green;
+}

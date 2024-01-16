@@ -1,0 +1,20 @@
+/* Cтили блока offer */
+.offer {
+  font-family: $secondary-font;
+  text-align: center;
+  background: rgba(104, 183, 56, 0.85);
+}
+
+.offer__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-white;
+  font-weight: 400;
+}
+
+.offer__paragraph {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $basic-white;
+}

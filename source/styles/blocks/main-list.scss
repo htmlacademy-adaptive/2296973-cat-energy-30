@@ -1,0 +1,15 @@
+/* Cтили блока main-list */
+.main-list {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-list__link {
+  text-decoration: none;
+  color: $basic-black;
+  font-family: $secondary-font;
+}

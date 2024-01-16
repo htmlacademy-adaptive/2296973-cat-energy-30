@@ -1,0 +1,59 @@
+/* Cтили блока selection */
+.selection {
+  font-family: $secondary-font;
+}
+
+.selection__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.selection__list {
+  margin: 0;
+  padding: 0;
+}
+
+.selection__field-group {
+  list-style: none;
+}
+
+.selection__form-name {
+  color: $special-dark-grey;
+}
+
+.selection__form-input {
+  color: $special-dark-grey;
+}
+
+.selection__item {
+  color: $special-dark-grey;
+}
+
+.selection__contacts-section {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.selection__heading-title {
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic-black;
+}
+
+.selection__form-text {
+  font-family: $secondary-font;
+  color: $special-dark-grey;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.selection__button {
+  background-color: $basic-green;
+}
+
+.selection__required-element {
+  font-family: $primary-font;
+  line-height: 16px;
+}

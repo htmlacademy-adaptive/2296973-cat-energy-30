@@ -1,0 +1,32 @@
+/* Cтили блока product */
+.catalog__list {
+  margin: 0;
+  padding: 0;
+}
+
+.product__item {
+  list-style: none;
+  background-color: $basic-grey;
+}
+
+.product__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $secondary-font;
+}
+
+.product__link {
+  text-decoration: none;
+  color: $special-black;
+}
+
+.product__description {
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+}
+
+.product__button {
+  background-color: $basic-green;
+  border: none;
+}

@@ -1,0 +1,19 @@
+/* Cтили блока advantages */
+.advantages__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-family: $primary-font;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__item {
+  list-style: none;
+}
+
+.advantages__paragraph {
+  color: $special-dark-grey;
+}
