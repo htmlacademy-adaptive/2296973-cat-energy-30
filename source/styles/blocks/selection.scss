@@ -24,6 +24,7 @@
 .selection__form-input-wrap {
   position: relative;
   display: inline-block;
+
   .selection__icon--validity::before {
     content: "";
     position: absolute;
@@ -35,12 +36,8 @@
     mask-repeat: no-repeat;
     background-color: $basic-black;
     z-index: 1;
-
   }
-}
-.selection__form-input-wrap {
-  position: relative;
-  display: inline-block;
+
   .selection__icon--call::before {
     content: "";
     position: absolute;
@@ -52,7 +49,6 @@
     mask-repeat: no-repeat;
     background-color: $basic-black;
     z-index: 1;
-
   }
 }
 
@@ -61,13 +57,13 @@
 }
 
 .selection__form-input--mail-icon:invalid + .selection__icon--validity::before {
-  background-color: $status-error
+  background-color: $status-error;
 }
-
 
 .selection__form-input--mail-icon:invalid {
   border: 2px solid $status-error;
 }
+
 .selection__item {
   color: $special-dark-grey;
 }

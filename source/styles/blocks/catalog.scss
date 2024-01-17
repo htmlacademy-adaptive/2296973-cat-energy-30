@@ -25,6 +25,7 @@
 
 .catalog__even-wrap {
   position: relative;
+
   &::before,
   &::after {
     position: absolute;
@@ -36,9 +37,7 @@
     transform: translate(-50%, -50%);
     background-color: #d3d3d3;
   }
-}
 
-.catalog__even-wrap {
   &::after {
     transform: translate(-50%, -50%) rotate(90deg);
   }

@@ -11,11 +11,8 @@
 }
 
 .advantages__item {
-  list-style: none;
-}
-
-.advantages__item {
   display: flex;
+  list-style: none;
 
   &::before {
     content: "";
@@ -39,11 +36,12 @@
     background-image: url("../../images/icons/stack.svg#icon-powder");
     background-size: 26px 28px;
   }
+
   &--eat::before {
     background-image: url("../../images/icons/stack.svg#icon-eat");
     background-size: 26px 28px;
-    background-position: center;
   }
+
   &--clock::before {
     background-image: url("../../images/icons/stack.svg#icon-clock");
     background-size: 26px 28px;

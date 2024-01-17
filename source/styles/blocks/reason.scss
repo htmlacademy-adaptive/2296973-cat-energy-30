@@ -34,6 +34,7 @@
     width: 38px;
     height: 50px;
   }
+
   &--weight-gain::after {
     background-image: url("../../images/icons/stack.svg#cat-pro");
     width: 67px;
@@ -68,17 +69,16 @@
     width: 24px;
     height: 12px;
     margin-left: 15px;
-
- }
+  }
 
   &::after {
-     content: "";
-     display: inline-block;
-     position: relative;
-     width: 24px;
-     height: 12px;
-     margin-left: 15px;
-     background-image: url("../../images/icons/stack.svg#icon-arrow");
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 12px;
+    margin-left: 15px;
+    background-image: url("../../images/icons/stack.svg#icon-arrow");
   }
 
   &:active {

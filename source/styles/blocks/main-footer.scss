@@ -12,13 +12,15 @@
   padding: 0;
 }
 
-.main-footer__social-link  {
+.main-footer__social-link {
   fill: $special-light-gray;
+
   &:hover,
   &:focus {
     fill: $basic-green;
     outline: none;
   }
+
   &:active {
     opacity: 0.3;
   }
@@ -37,18 +39,19 @@
   &:focus > .main-footer__link-icon {
     fill: $basic-green;
     outline: none;
-
   }
+
   &:focus-visible {
     outline: none;
   }
+
   &:active {
     opacity: 0.3;
   }
 }
 
 .main-footer__link-icon {
-  fill:$special-light-gray;
+  fill: $special-light-gray;
 }
 
 
