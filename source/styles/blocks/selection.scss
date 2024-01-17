@@ -21,10 +21,53 @@
   color: $special-dark-grey;
 }
 
-.selection__form-input {
-  color: $special-dark-grey;
+.selection__form-input-wrap {
+  position: relative;
+  display: inline-block;
+  .selection__icon--validity::before {
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 13px;
+    width: 20px;
+    height: 20px;
+    mask-image: url("../../images/icons/stack.svg#mail");
+    mask-repeat: no-repeat;
+    background-color: $basic-black;
+    z-index: 1;
+
+  }
+}
+.selection__form-input-wrap {
+  position: relative;
+  display: inline-block;
+  .selection__icon--call::before {
+    content: "";
+    position: absolute;
+    right: 13px;
+    top: 13px;
+    width: 20px;
+    height: 20px;
+    mask-image: url("../../images/icons/stack.svg#call");
+    mask-repeat: no-repeat;
+    background-color: $basic-black;
+    z-index: 1;
+
+  }
 }
 
+.selection__form-input--mail-icon:focus + .selection__icon--validity::before {
+  background-color: $basic-green;
+}
+
+.selection__form-input--mail-icon:invalid + .selection__icon--validity::before {
+  background-color: $status-error
+}
+
+
+.selection__form-input--mail-icon:invalid {
+  border: 2px solid $status-error;
+}
 .selection__item {
   color: $special-dark-grey;
 }

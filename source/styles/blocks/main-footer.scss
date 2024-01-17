@@ -12,12 +12,45 @@
   padding: 0;
 }
 
+.main-footer__social-link  {
+  fill: $special-light-gray;
+  &:hover,
+  &:focus {
+    fill: $basic-green;
+    outline: none;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-footer__link-copyright {
   font-size: 16px;
   line-height: 18px;
   color: $special-dark-grey;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 23px;
+
+  &:hover > .main-footer__link-icon,
+  &:focus > .main-footer__link-icon {
+    fill: $basic-green;
+    outline: none;
+
+  }
+  &:focus-visible {
+    outline: none;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
+
+.main-footer__link-icon {
+  fill:$special-light-gray;
+}
+
 
 .main-footer__secondary-footer {
   background-color: $basic-grey;

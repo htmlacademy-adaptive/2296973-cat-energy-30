@@ -22,3 +22,24 @@
   background-color: $basic-grey;
   color: $special-dark-grey;
 }
+
+.catalog__even-wrap {
+  position: relative;
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d3d3d3;
+  }
+}
+
+.catalog__even-wrap {
+  &::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}

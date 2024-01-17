@@ -37,3 +37,12 @@
 .additional_button {
   background-color: $basic-green;
 }
+
+.additional__gift-wrapper {
+  padding: 189px 81px 78px 78px;
+  background-color: $basic-green;
+  background-image: url("../../images/icons/stack.svg#icon-gift");
+  background-size: 78px 80px;
+  background-repeat: no-repeat;
+  background-position: top 59px left 101px;
+}
