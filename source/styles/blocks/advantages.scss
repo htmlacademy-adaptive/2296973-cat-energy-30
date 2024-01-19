@@ -11,7 +11,41 @@
 }
 
 .advantages__item {
+  display: flex;
   list-style: none;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+  }
+
+  &--leaf::before {
+    background-image: url("../../images/icons/stack.svg#icon-leaf");
+    background-size: 30px 32px;
+  }
+
+  &--powder::before {
+    background-image: url("../../images/icons/stack.svg#icon-powder");
+    background-size: 26px 28px;
+  }
+
+  &--eat::before {
+    background-image: url("../../images/icons/stack.svg#icon-eat");
+    background-size: 26px 28px;
+  }
+
+  &--clock::before {
+    background-image: url("../../images/icons/stack.svg#icon-clock");
+    background-size: 26px 28px;
+  }
 }
 
 .advantages__paragraph {
