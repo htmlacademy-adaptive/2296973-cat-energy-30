@@ -5,11 +5,21 @@
   background: rgba(104, 183, 56, 0.85);
 }
 
+.offer__wrapper {
+
+
+
+}
+
 .offer__title {
   font-size: 36px;
   line-height: 36px;
   color: $basic-white;
   font-weight: 400;
+  margin: 0;
+  grid-row: 1 / 2;
+
+
 }
 
 .offer__paragraph {
@@ -17,4 +27,15 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $basic-white;
+  margin: 0;
+
 }
+
+.offer__button {
+}
+
+.offer__picture-wrap {
+
+}
+
+

@@ -4,11 +4,21 @@ body {
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
 }
-
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: min-content 1fr min-content;
 }
