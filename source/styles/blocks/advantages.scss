@@ -1,18 +1,67 @@
 /* Cтили блока advantages */
+.advantages__wrapper {
+  margin-bottom: 49px;
+}
+
 .advantages__title {
   font-size: 36px;
   line-height: 40px;
-  font-family: $primary-font;
+  font-family: $secondary-font;
+  margin: 0 0 38px 0;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 32px 0;
+  }
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    gap:  37px 136px;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(2, auto);
+    counter-reset: process-list;
+    align-items: start;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    column-gap: 94px;
+    grid-template-columns: repeat(4, 230px);
+    grid-template-rows: auto;
+    counter-reset: process-list;
+  }
 }
 
 .advantages__item {
   display: flex;
   list-style: none;
+  align-items: center;
+
+
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 40px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 183px;
+    padding-top: 40px;
+  }
+
 
   &::before {
     content: "";
@@ -25,6 +74,12 @@
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 30px;
+    }
   }
 
   &--leaf::before {
@@ -46,8 +101,48 @@
     background-image: url("../../images/icons/stack.svg#icon-clock");
     background-size: 26px 28px;
   }
+
+
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      counter-increment: process-list;
+      content: counter(process-list);
+      position: absolute;
+      font-size: 280px;
+      color: $basic-grey;
+      font-family: $secondary-font;
+      z-index: -1;
+      top: 0;
+      right: 4px;
+      line-height: 280px;
+    }
+
+  }
+  &--leaf::after {
+
+    @media (min-width: $tablet-width) {
+      right: 26px;
+    }
+  }
+
+  &--clock {
+    @media (min-width: $desktop-width) {
+      width: 241px;
+    }
+  }
 }
 
 .advantages__paragraph {
+  width: 200px;
+  margin: 0;
   color: $special-dark-grey;
+
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    font-size: 16px;
+    line-height: 24px;
+
+  }
 }

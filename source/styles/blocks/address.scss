@@ -1,13 +1,44 @@
 /* Cтили блока address */
+.address__container {
+  display: flex;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  gap: 18px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+  @media (min-width: $desktop-width) {
+
+
+  }
+}
+
 .address__title {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   font-family: $secondary-font;
   text-transform: uppercase;
+  margin: 0;
+  width: 124px;
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__paragraph {
   line-height: 20px;
   color: $special-dark-grey;
   font-style: normal;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: right;
+    width: 157px;
+  }
 }
+

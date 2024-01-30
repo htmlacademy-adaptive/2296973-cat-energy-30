@@ -1,1 +1,19 @@
 /* Cтили блока slider */
+.slider__wrapper {
+  display: flex;
+}
+
+.slider__img {
+
+  @media (min-height: $desktop-width) {
+    width: 560px;
+    height: 512px;
+
+  }
+
+    &--after {
+      display: none;
+    }
+
+  }
+

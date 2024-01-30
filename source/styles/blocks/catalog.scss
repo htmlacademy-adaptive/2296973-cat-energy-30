@@ -1,8 +1,13 @@
 /* Cтили блока catalog */
+.catalog {
+  padding-top: 27px;
+}
+
 .catalog__title {
   font-size: 36px;
   line-height: 36px;
   font-family: $secondary-font;
+  margin: 0 0 40px 0;
 }
 
 .catalog__even-title {
