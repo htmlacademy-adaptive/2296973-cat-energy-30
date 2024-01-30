@@ -3,30 +3,142 @@
   background-color: #eaeaea;
 }
 
+.example__data-wrap {
+  display: flex;
+  gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    gap: 43px;
+    align-items: center;
+  }
+}
+
+.example__statistics-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .example__title {
   font-size: 36px;
   line-height: 40px;
   font-family: $secondary-font;
+  margin: 0 0 40px 0;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__paragraph {
   color: $special-dark-grey;
+  margin: 0 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 425px;
+  }
 }
 
 .example__text {
   font-size: 12px;
   line-height: 12px;
+  width: 84px;
+  text-align: center;
+  font-family: $primary-font;
+  color: $special-dark-grey;
+  background-color: #eaeaea;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 127px;
+  }
+}
+
+.example__statistics {
+  display: flex;
+  flex-direction: column;
+  width: 124px;
+  align-items: center;
+  gap: 11px;
+  position: relative;
+  margin: 15px 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 16px;
+    width: 124px;
+    border-radius: 4px;
+    height: 56px;
+    border: 1px solid #cdcdcd;
+  }
 }
 
 .example__quantity {
-  font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
+  font-family: $secondary-font;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__subtitle {
   line-height: 20px;
   text-transform: uppercase;
   font-family: $secondary-font;
+  margin: 0;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.example__subtitle-text {
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-left: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    margin-left: 63px;
+  }
 }

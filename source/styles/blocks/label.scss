@@ -2,4 +2,10 @@
 .label {
   font-size: 16px;
   text-transform: uppercase;
+  white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    color: $special-dark-grey;
+  }
 }
