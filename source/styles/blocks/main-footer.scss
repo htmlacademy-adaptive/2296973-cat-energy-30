@@ -17,7 +17,6 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     padding: 60px 70px 60px 70px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -45,15 +44,12 @@
 
   @media (min-width: $tablet-width) {
     height: 400px;
-
   }
 }
 
 
-
-
 .main-footer__address-img {
-text-align: center;
+  text-align: center;
 }
 
 .main-footer__social-item {

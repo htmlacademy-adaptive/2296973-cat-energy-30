@@ -4,16 +4,12 @@
 }
 
 .slider__img {
-
   @media (min-height: $desktop-width) {
     width: 560px;
     height: 512px;
-
   }
 
-    &--after {
-      display: none;
-    }
-
+  &--after {
+    display: none;
   }
-
+}

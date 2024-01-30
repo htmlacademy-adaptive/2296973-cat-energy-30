@@ -26,7 +26,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    gap:  37px 136px;
+    gap: 37px 136px;
     grid-template-columns: repeat(2, 250px);
     grid-template-rows: repeat(2, auto);
     counter-reset: process-list;
@@ -47,7 +47,6 @@
   display: flex;
   list-style: none;
   align-items: center;
-
 
 
   @media (min-width: $tablet-width) {
@@ -103,7 +102,6 @@
   }
 
 
-
   &::after {
     @media (min-width: $tablet-width) {
       counter-increment: process-list;
@@ -117,10 +115,9 @@
       right: 4px;
       line-height: 280px;
     }
-
   }
-  &--leaf::after {
 
+  &--leaf::after {
     @media (min-width: $tablet-width) {
       right: 26px;
     }
@@ -143,6 +140,5 @@
     width: auto;
     font-size: 16px;
     line-height: 24px;
-
   }
 }

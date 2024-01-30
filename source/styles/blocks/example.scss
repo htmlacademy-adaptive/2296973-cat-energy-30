@@ -1,8 +1,6 @@
 /* Cтили блока example */
 .example {
   background-color: #eaeaea;
-
-
 }
 
 .example__data-wrap {
@@ -13,11 +11,6 @@
     gap: 43px;
     align-items: center;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
-
 }
 
 .example__statistics-wrapper {
@@ -30,6 +23,7 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: flex-start;
@@ -64,6 +58,7 @@
     font-size: 16px;
     line-height: 24px;
   }
+
   @media (min-width: $desktop-width) {
     width: 425px;
   }
@@ -83,6 +78,7 @@
     font-size: 14px;
     line-height: 24px;
   }
+
   @media (min-width: $desktop-width) {
     width: 127px;
   }
@@ -95,7 +91,7 @@
   align-items: center;
   gap: 11px;
   position: relative;
-  margin: 15px 0 0px;
+  margin: 15px 0 0;
 
   &::before {
     content: "";
@@ -131,11 +127,11 @@
     font-size: 20px;
     line-height: 20px;
   }
-
 }
 
 .example__subtitle-text {
   text-align: right;
+
   @media (min-width: $tablet-width) {
     display: block;
     margin-left: 63px;
@@ -146,4 +142,3 @@
     margin-left: 63px;
   }
 }
-

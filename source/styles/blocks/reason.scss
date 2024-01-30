@@ -72,6 +72,7 @@
       right: 93px;
       left: auto;
     }
+
     @media (min-width: $desktop-width) {
       width: 70px;
       height: 97px;
@@ -79,6 +80,7 @@
       left: 67px;
     }
   }
+
   &--weight-loss::after {
     top: 24px;
     left: 20px;
@@ -109,6 +111,7 @@
       right: 26px;
       left: auto;
     }
+
     @media (min-width: $desktop-width) {
       width: 134px;
       height: 56px;
@@ -157,7 +160,7 @@
 }
 
 .reason__paragraph {
-  color: #444;
+  color: #444444;
   margin: 0 0 15px;
   padding-bottom: 23px;
   padding-right: 13px;
@@ -184,8 +187,8 @@
 .reason__link {
   font-size: 16px;
   line-height: 16px;
-  font-family: "Oswald",sans-serif;
-  color: #000;
+  font-family: "Oswald", sans-serif;
+  color: #000000;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-flex;
@@ -218,6 +221,7 @@
   &:active::after {
     opacity: 0.3;
   }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
