@@ -1,8 +1,22 @@
 /* Cтили блока additional */
+.additional__wrapper {
+  padding-top: 25px;
+}
+
 .additional__title {
   font-size: 24px;
   line-height: 24px;
   font-family: $secondary-font;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 36px;
+  margin-left: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
 }
 
 .additional__table-wrapper {
@@ -12,37 +26,129 @@
 
 .additional__table-row {
   list-style: none;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  padding: 11px 0 19px 0;
+  border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, auto);
+    padding: 26px 38px 28px 38px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 161px 164px 285px 40px 244px 81px 245px;
+  }
+}
+
+.additional__table-row:last-child {
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .additional__goods {
   font-family: $secondary-font;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
-  color: $special-dark-grey;
+  color: #222222;
+  font-weight: 400;
+  margin: 0 0 13px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
+  }
+}
+
+.additional__paragraph {
+  margin: 0 0 15px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+    margin-left: auto;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    grid-column: 3 / 4;
+  }
 }
 
 .additional__package {
-  font-size: 16px;
-  line-height: 20px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 132px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 132px;
+    text-align: left;
+  }
 }
 
 .additional__price {
-  font-size: 16px;
-  line-height: 20px;
   color: $special-dark-grey;
+  margin-left: auto;
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    width: 42px;
+    text-align: left;
+  }
 }
 
 .additional_button {
   background-color: $basic-green;
+  padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 5 / 6;
+    width: 244px;
+    justify-self: flex-end;
+    margin-left: 40px;
+  }
 }
 
+
 .additional__gift-wrapper {
-  padding: 189px 81px 78px 78px;
+
   background-color: $basic-green;
   background-image: url("../../images/icons/stack.svg#icon-gift");
   background-size: 78px 80px;
   background-repeat: no-repeat;
   background-position: top 59px left 101px;
+  width: 280px;
+  height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.additional__gift-subtitle {
+  width: 161px;
+  color: $basic-white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
 }
