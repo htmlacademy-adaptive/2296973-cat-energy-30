@@ -1,0 +1,73 @@
+/* Cтили блока main-list */
+.main-list {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 63px;
+  left: 0;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  background-color: $basic-white;
+  justify-content: flex-end;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 436px;
+    position: static;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    width: 855px;
+    font-size: 20px;
+  }
+}
+
+.main-list__item {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    min-width: 64px;
+    border: none;
+    padding: 0;
+  }
+}
+
+.main-list__link {
+  text-decoration: none;
+  color: $basic-black;
+  font-family: $secondary-font;
+}
+
+.main-list__link--current {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      background-color: $basic-green;
+      left: 0;
+      bottom: -10px;
+    }
+  }
+}

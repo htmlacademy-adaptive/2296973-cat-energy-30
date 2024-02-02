@@ -1,0 +1,132 @@
+/* Cтили блока main-footer */
+.address__group {
+  background-color: $basic-white;
+}
+
+.main-footer__wrapper {
+  position: relative;
+}
+
+.main-footer__address-wrapper {
+  display: flex;
+  gap: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding: 60px 70px 60px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    top: 95px;
+    left: 110px;
+    background-color: $basic-white;
+    width: 565px;
+    height: 199px;
+    padding: 60px 80px;
+  }
+}
+
+.main-footer__map {
+  text-align: center;
+}
+
+.main-footer__frame-map {
+  width: 100%;
+  height: 362px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+
+.main-footer__address-img {
+  text-align: center;
+}
+
+.main-footer__social-item {
+  list-style: none;
+}
+
+.main-footer__social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+}
+
+.main-footer__social-link {
+  fill: $special-light-gray;
+
+  &:hover,
+  &:focus {
+    fill: $basic-green;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-footer__logo {
+  padding-bottom: 20px;
+}
+
+.main-footer__link-copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 140px;
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
+
+  &:hover > .main-footer__link-icon,
+  &:focus > .main-footer__link-icon {
+    fill: $basic-green;
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-footer__link-icon {
+  fill: $special-light-gray;
+}
+
+
+.main-footer__secondary-footer {
+  background-color: $basic-grey;
+}
+
+.main-footer__secondary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

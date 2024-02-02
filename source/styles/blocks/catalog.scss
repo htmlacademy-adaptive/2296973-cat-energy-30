@@ -1,0 +1,49 @@
+/* Cтили блока catalog */
+.catalog {
+  padding-top: 27px;
+}
+
+.catalog__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-family: $secondary-font;
+  margin: 0 0 40px 0;
+}
+
+.catalog__even-title {
+  font-size: 16px;
+  font-family: $secondary-font;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog__even-description {
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+}
+
+.catalog__even-button {
+  background-color: $basic-grey;
+  color: $special-dark-grey;
+}
+
+.catalog__even-wrap {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 2px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d3d3d3;
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+}

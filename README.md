@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Илья Филимоненко](https://up.htmlacademy.ru/adaptive/30/user/2296973).
-* Наставник: `Неизвестно`.
+* Студент: [Илья Филимоненко] https://htmlacademy.ru/profile/id2296973.
+* Наставник: `Арсений Березин`https://htmlacademy.ru/profile/bars07
 
 ---
 
