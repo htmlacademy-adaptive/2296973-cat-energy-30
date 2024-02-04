@@ -4,7 +4,29 @@
   flex-direction: column;
   font-family: $secondary-font;
   text-align: center;
-  background: rgba(104, 183, 56, 0.85);
+  background-image: url("../../images/hero-cat-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+
+    &::after {
+      display: none;
+    }
+  }
+
+
+
+  &::after {
+    content: "";
+    width: 320px;
+    left: 0;
+    height: 302px;
+    position: absolute;
+    background-color: rgba(104, 183, 56, 0.85);
+  }
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
@@ -15,6 +37,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
     height: 580px;
+    background-color: transparent;
   }
 }
 
@@ -24,6 +47,7 @@
   color: $basic-white;
   font-weight: 400;
   margin: 25px 0 26px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     width: 415px;
@@ -45,6 +69,7 @@
   text-transform: uppercase;
   color: $basic-white;
   margin: 0 0 29px 0;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -78,6 +103,8 @@
 }
 
 .offer__picture-wrap {
+
+  z-index: 1;
   @media (min-width: $tablet-width) {
     order: 4;
     width: 709px;
@@ -95,3 +122,5 @@
     margin: 0;
   }
 }
+
+

@@ -6,16 +6,45 @@
     padding-top: 65px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 73px;
   }
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 324px);
+    gap: 60px;
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 245px);
+    gap: 63px 80px;
+  }
+}
+
+
+.catalog__wrapper {
+ padding: 0;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+    padding: 0 30px 0 30px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 0 110px;
+  }
+
 }
 
 .catalog__title {
   font-size: 36px;
   line-height: 36px;
   font-family: $secondary-font;
-  margin: 0 0 40px 0;
+  margin: 0 0 41px 20px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -23,7 +52,6 @@
     margin: 0 0 84px 0;
   }
 }
-
 
 .product__add {
   display: grid;
@@ -37,23 +65,21 @@
 }
 
 .catalog__even-wrap {
-  width: 280px;
   position: relative;
-  padding-top: 59px;
+  padding-top: 56px;
   align-items: center;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
 
-    padding: 190px 37px 0 37px;
+    padding: 231px 0px 0;
   }
 
 
   @media (min-width: $desktop-width) {
-    width: 245px;
-    padding: 181px 37px 0;
+
+    padding: 223px 0px 0;
   }
 
   &::before,
@@ -68,7 +94,7 @@
     background-color: #d3d3d3;
 
     @media (min-width: $tablet-width) {
-      top: 26%;
+      top: 33%;
       width: 60px;
     }
   }
@@ -91,7 +117,7 @@
     font-size: 20px;
     line-height: 24px;
     width: 134px;
-    margin: 0 0 27px;
+    margin: 0 0 23px;
   }
 }
 
@@ -110,7 +136,7 @@
     margin: 0 0 82px 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin: 0 0 88px;
   }
 }
@@ -121,4 +147,11 @@
   width: 100%;
   background-color: $basic-grey;
   color: $special-dark-grey;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+  &:active {
+    color: $special-dark-grey;
+  }
 }

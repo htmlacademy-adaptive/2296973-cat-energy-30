@@ -1,7 +1,26 @@
 .input {
   font-family: $secondary-font;
   font-size: 16px;
-  padding: 0;
+  padding: 14px 35px 14px 15px;
   height: 45px;
   width: 100%;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+
+  &:invalid {
+    border: 2px solid $status-error;
+  }
+  &:hover {
+    border-color: #cdcdcd;
+  }
+  &:focus {
+    border-color: $special-dark-grey;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 35px 11px 20px;
+    font-size: 20px;
+    height: 52px;
+  }
 }
