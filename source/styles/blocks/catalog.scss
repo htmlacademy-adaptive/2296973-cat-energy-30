@@ -20,6 +20,7 @@
     grid-template-columns: repeat(2, 324px);
     gap: 60px;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
     gap: 63px 80px;
@@ -28,15 +29,16 @@
 
 
 .catalog__wrapper {
- padding: 0;
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
     padding: 0 30px 0 30px;
   }
+
   @media (min-width: $desktop-width) {
     padding: 0 110px 0 110px;
   }
-
 }
 
 .catalog__title {
@@ -73,18 +75,19 @@
 
   @media (min-width: $tablet-width) {
 
-    padding: 231px 0px 0;
+    padding: 231px 0 0;
   }
 
 
   @media (min-width: $desktop-width) {
 
-    padding: 223px 0px 0;
+    padding: 223px 0 0;
   }
 
   &::before,
   &::after {
     position: absolute;
+    display: block;
     content: "";
     width: 30px;
     height: 2px;
@@ -151,6 +154,7 @@
   &:hover {
     background-color: #ebebeb;
   }
+
   &:active {
     color: $special-dark-grey;
   }

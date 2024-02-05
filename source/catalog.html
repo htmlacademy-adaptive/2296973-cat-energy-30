@@ -13,7 +13,7 @@
   <body class="page__body">
     <header class="main-header ">
       <div class="main-header__wrapper container">
-        <a class="main-header__logo logo" href="#">
+        <a class="main-header__logo logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/icons/logo-desktop.svg">
             <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/icons/logo-tablet.svg">
@@ -30,7 +30,7 @@
         <nav class="main-nav">
           <label class="main-nav__dropdown-title" for="dropdown">
           </label>
-          <button class="main-nav__toggle main-nav__toggle--close" type="button">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <input class="main-nav__checkbox visually-hidden" type="checkbox" name="dropdown" id="dropdown">
@@ -55,7 +55,7 @@
             Каталог продукции
           </h1>
           <ul class="catalog__list product">
-            <li class="product__item">
+            <li class="product__item" id="pro">
               <div class="product__item-wrapper">
                 <a class="product__link-img " href="#">
                   <picture>
@@ -87,7 +87,7 @@
                   </div>
                 </div>
               </div>
-              <button class="product__button button" type="button">Заказать</button>
+              <a class="product__button button" href="form.html">Заказать</a>
             </li>
             <li class="product__item">
               <div class="product__item-wrapper">
@@ -121,7 +121,7 @@
                   </div>
                 </div>
               </div>
-              <button class="product__button button" type="button">Заказать</button>
+              <a class="product__button button" href="form.html">Заказать</a>
             </li>
             <li class="product__item">
               <div class="product__item-wrapper">
@@ -155,7 +155,7 @@
                 </div>
 
               </div>
-              <button class="product__button button" type="button">Заказать</button>
+              <a class="product__button button" href="form.html">Заказать</a>
             </li>
             <li class="product__item">
               <div class="product__item-wrapper product__item-wrapper--bottom-mg">
@@ -188,9 +188,9 @@
                   </div>
                 </div>
               </div>
-              <button class="product__button button" type="button">Заказать</button>
+              <a class="product__button button" href="form.html">Заказать</a>
             </li>
-            <li class="product__item">
+            <li class="product__item" id="slim">
               <div class="product__item-wrapper">
                 <a class="product__link-img" href="#">
                   <picture>
@@ -221,7 +221,7 @@
                   </div>
                 </div>
               </div>
-              <button class="product__button button" type="button">Заказать</button>
+              <a class="product__button button" href="form.html">Заказать</a>
             </li>
             <li class="product__item">
               <div class="product__item-wrapper">
@@ -254,7 +254,7 @@
                   </div>
                 </div>
               </div>
-              <button class="product__button button" type="button">Заказать</button>
+              <a class="product__button button" href="form.html">Заказать</a>
             </li>
             <li class="product__item">
               <div class="product__item-wrapper">
@@ -287,9 +287,9 @@
                   </div>
                 </div>
               </div>
-              <button class="product__button button" type="button">Заказать</button>
+              <a class="product__button button" href="form.html">Заказать</a>
             </li>
-            <li class="product__item">
+            <li class="product__item product__item--border">
               <div class="catalog__even-wrap">
                 <h2 class="catalog__even-title">
                   Показать еще 100500 товаров
@@ -316,7 +316,7 @@
                     <span class="additional__price">200 ₽</span>
                   </p>
                 </div>
-                <button class="additional_button button" type="button">заказать</button>
+                <a class="additional_button button" href="form.html">Заказать</a>
               </li>
               <li class="additional__table-row">
                 <div class="additional-contaiten">
@@ -327,7 +327,7 @@
                   </p>
 
                 </div>
-                <button class="additional_button button" type="button">заказать</button>
+                <a class="additional_button button" href="form.html">Заказать</a>
               </li>
               <li class="additional__table-row">
                 <div class="additional-contaiten">
@@ -337,7 +337,7 @@
                     <span class="additional__price">100 ₽</span>
                   </p>
                 </div>
-                <button class="additional_button button" type="button">заказать</button>
+                <a class="additional_button button" href="form.html">Заказать</a>
               </li>
               <li class="additional__table-row">
                 <div class="additional-contaiten">
@@ -347,7 +347,7 @@
                     <span class="additional__price">300 ₽</span>
                   </p>
                 </div>
-                <button class="additional_button button" type="button">заказать</button>
+                <a class="additional_button button" href="form.html">Заказать</a>
               </li>
             </ul>
 
@@ -375,7 +375,7 @@
           </address>
         </div>
         <div class="main-footer__map" id="map">
-           <iframe class="main-footer__frame-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+          <iframe class="main-footer__frame-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
             loading="lazy"
             width="320"
             height="362">
@@ -421,7 +421,7 @@
               </li>
             </ul>
             <div class="main-footer__copyright">
-              <a class="main-footer__link-copyright" href="#">HTML Academy
+              <a class="main-footer__link-copyright" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
                 <svg class="main-footer__link-icon" width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
                   <use href="../../images/icons/stack.svg#htmlacademy-logo"></use>
                 </svg>
@@ -432,5 +432,6 @@
         </div>
       </div>
     </footer>
+    <script src="scripts/index.js"></script>
   </body>
 </html>

@@ -12,6 +12,10 @@
   display: flex;
 }
 
+.main-nav__toggle.main-nav__toggle--close {
+  background-image: url("../../images/icons/stack.svg#cross");
+}
+
 
 .main-nav__dropdown-title {
   width: 24px;

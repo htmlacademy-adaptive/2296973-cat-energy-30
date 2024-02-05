@@ -6,8 +6,10 @@
 
   @media (min-width: $tablet-width) {
     width: 560px;
-    min-height: 512px;
+    min-height: 517px;
+    margin: 0 auto;
   }
+
   @media (min-width: $desktop-width) {
     grid-row: 1 / 4;
     grid-column: 2 / 3;
@@ -22,6 +24,7 @@
 
   &::after {
     content: "";
+    display: block;
     position: absolute;
     height: 256px;
     width: 4px;
@@ -34,6 +37,10 @@
 
     @media (min-width: $tablet-width) {
       height: 512px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -21px;
     }
   }
 }
@@ -51,17 +58,9 @@
   cursor: e-resize;
   z-index: 1;
 
-  &:hover {
-    border: 2px solid $basic-green;
-  }
-
-  &:active {
-    border: 2px solid $basic-green;
-    opacity: .6;
-  }
-
   &::before {
     position: absolute;
+    display: block;
     content: "";
     top: 50%;
     left: 50%;
@@ -75,23 +74,36 @@
     z-index: 4;
   }
 
-  &:hover::before{
+  @media (min-width: $desktop-width) {
+    top: -21px;
+  }
+
+  &:hover {
+    border: 2px solid $basic-green;
+  }
+
+  &:active {
+    border: 2px solid $basic-green;
+    opacity: 0.6;
+  }
+
+  &:hover::before {
     background-color: $basic-green;
   }
 
   &:disabled {
-    opacity: .2;
+    opacity: 0.2;
     cursor: default;
 
     &:hover {
       border: 2px solid #666666;
-      opacity: .2;
+      opacity: 0.2;
     }
 
     &:hover::before,
     &:active::before {
       background-color: #666666;
-      opacity: .2;
+      opacity: 0.2;
     }
   }
 }
@@ -105,23 +117,20 @@
 }
 
 .slider__item {
+  position: relative;
   top: 0;
   left: 0;
-  width: 140px;
+  width: auto;
   overflow-x: hidden;
+
 
   &--after {
     z-index: 3;
     display: flex;
-    justify-content: end;
-  }
-
-  @media (min-height: $tablet-width) {
-    width: 280px;
+    justify-content: flex-end;
   }
 }
 
 .slider__image {
   min-width: auto;
 }
-

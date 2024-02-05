@@ -10,9 +10,11 @@
   &:invalid {
     border: 2px solid $status-error;
   }
+
   &:hover {
     border-color: #cdcdcd;
   }
+
   &:focus {
     border-color: $special-dark-grey;
   }

@@ -56,7 +56,7 @@
   font-family: $secondary-font;
 
   &:hover {
-    opacity: .6;
+    opacity: 0.6;
   }
 
   &:active {
@@ -64,7 +64,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     &--white-cl {
       color: $basic-white;
     }
@@ -88,11 +87,9 @@
 }
 
 @media (min-width: $desktop-width) {
-
-    .main-list__link--white-cl {
-      &::after {
-        background-color: $basic-white;
-      }
-
+  .main-list__link--white-cl {
+    &::after {
+      background-color: $basic-white;
+    }
   }
 }
