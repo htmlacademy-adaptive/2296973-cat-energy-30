@@ -16,6 +16,7 @@
     gap: 80px;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 74px;
   }
 }
 
@@ -77,7 +78,7 @@
       width: 70px;
       height: 97px;
       top: 41px;
-      left: 67px;
+      left: 69px;
     }
   }
 
@@ -92,8 +93,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 52px;
-      left: 47px;
+      top: 47px;
+      left: 54px;
     }
   }
 
@@ -114,9 +115,9 @@
 
     @media (min-width: $desktop-width) {
       width: 134px;
-      height: 56px;
-      top: 67px;
-      left: 33px;
+      height: 60px;
+      top: 66px;
+      left: 34px;
     }
   }
 
@@ -131,8 +132,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 52px;
-      left: 47px;
+      top: 47px;
+      left: 52px;
     }
   }
 }
@@ -179,7 +180,7 @@
 
   @media (min-width: $desktop-width) {
     width: 457px;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
   }
 }
 

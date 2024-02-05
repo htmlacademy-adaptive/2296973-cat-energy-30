@@ -1,48 +1,280 @@
 /* Cтили блока additional */
+.additional__wrapper {
+  padding-top: 25px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+    padding-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 87px;
+  }
+}
+
 .additional__title {
   font-size: 24px;
   line-height: 24px;
   font-family: $secondary-font;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 77px;
+    margin-left: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.additional-row-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    gap: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .additional__table-wrapper {
+  display: grid;
   margin: 0;
   padding: 0;
+  grid-template-rows: repeat(4, auto);
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+  }
 }
+
 
 .additional__table-row {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 13px 0 19px;
+  border-top: 1px solid #cdcdcd;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    padding: 15px 0 17px;
+    justify-content: space-between;
+    border-left: 0;
+    border-right: 0;
+  }
 }
+
+.additional-contaiten {
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.additional__gift {
+  list-style: none;
+  background-image: url("../../images/gift@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 200px;
+    background-image: url("../../images/gift-tablet@1x.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    background-image: url("../../images/gift-desktop@1x.jpg");
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../../images/icons/stack.svg#icon-gift");
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 80px;
+    top: 58px;
+    left: 101px;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+      left: 77px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 58px;
+      left: 83px;
+    }
+  }
+}
+
 
 .additional__goods {
   font-family: $secondary-font;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
-  color: $special-dark-grey;
+  color: #222222;
+  font-weight: 400;
+  margin: 0 0 11px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    width: 163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 163px;
+  }
+}
+
+.additional__paragraph {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+    margin-top: 6px;
+  }
 }
 
 .additional__package {
-  font-size: 16px;
-  line-height: 20px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 132px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 132px;
+    text-align: left;
+  }
 }
 
 .additional__price {
-  font-size: 16px;
-  line-height: 20px;
   color: $special-dark-grey;
+  margin-left: auto;
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    width: 42px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 42px;
+    text-align: left;
+  }
 }
 
 .additional_button {
   background-color: $basic-green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    justify-self: flex-end;
+    margin-left: 40px;
+  }
 }
 
+
 .additional__gift-wrapper {
-  padding: 189px 81px 78px 78px;
-  background-color: $basic-green;
-  background-image: url("../../images/icons/stack.svg#icon-gift");
-  background-size: 78px 80px;
-  background-repeat: no-repeat;
-  background-position: top 59px left 101px;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+  }
+}
+
+.additional__gift-subtitle {
+  width: 161px;
+  color: $basic-white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  z-index: 2;
+  padding-top: 186px;
+  padding-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    padding: 73px 0 69px;
+    margin-right: 119px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 185px 0 43px;
+    text-align: center;
+    margin: 0;
+  }
 }

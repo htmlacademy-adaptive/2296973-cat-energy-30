@@ -12,10 +12,15 @@
   display: flex;
 }
 
+.main-nav__toggle.main-nav__toggle--close {
+  background-image: url("../../images/icons/stack.svg#cross");
+}
+
+
 .main-nav__dropdown-title {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
+  width: 24px;
+  height: 24px;
+  position: absolute;
 }
 
 .main-nav__toggle {
@@ -29,4 +34,8 @@
   border: none;
   z-index: -1;
   padding: 5px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

@@ -36,5 +36,15 @@
     font-size: 16px;
     text-align: right;
     width: 157px;
+    margin-bottom: 22px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+    text-align: left;
   }
 }
