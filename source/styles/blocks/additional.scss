@@ -1,4 +1,8 @@
 /* Cтили блока additional */
+.additional {
+  overflow-x: hidden;
+}
+
 .additional__wrapper {
   padding-top: 25px;
   margin-bottom: 35px;
@@ -19,7 +23,40 @@
   font-family: $secondary-font;
   font-weight: 400;
   margin: 0;
+  position: relative;
+  width: fit-content;
   margin-bottom: 36px;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 17px;
+    width: 100vw;
+    height: 2px;
+    background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
+  }
+
+  &::before {
+    right: calc(100% + 20px);
+
+    @media (min-width: $tablet-width) {
+      right: calc(100% + 40px);
+    }
+  }
+
+  &::after {
+    left: calc(100% + 20px);
+
+    @media (min-width: $tablet-width) {
+      left: calc(100% + 40px);
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -33,7 +70,7 @@
   }
 }
 
-.additional-row-wrap {
+.additional__row-wrap {
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -86,7 +123,7 @@
   }
 }
 
-.additional-contaiten {
+.additional__container {
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
@@ -103,7 +140,7 @@
 
 .additional__gift {
   list-style: none;
-  background-image: url("../../images/gift@1x.jpg");
+  background-image: url("../../images/gift@1x.webp");
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
@@ -119,15 +156,27 @@
     background-color: rgba(104, 183, 56, 0.85);
   }
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/gift@2x.webp");
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
     min-height: 200px;
     background-image: url("../../images/gift-tablet@1x.jpg");
   }
 
+  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
+    background-image: url("../../images/gift-tablet@2x.webp");
+  }
+
   @media (min-width: $desktop-width) {
     width: 245px;
     background-image: url("../../images/gift-desktop@1x.jpg");
+  }
+
+  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
+    background-image: url("../../images/gift-desktop@2x.webp");
   }
 
   &::after {
@@ -199,12 +248,12 @@
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
-    width: 132px;
+    width: 133px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    width: 132px;
+    width: 133px;
     text-align: left;
   }
 }
@@ -268,7 +317,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 73px 0 69px;
-    margin-right: 119px;
+    margin-right: 126px;
     text-align: left;
   }
 

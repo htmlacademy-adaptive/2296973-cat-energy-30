@@ -2,7 +2,6 @@
 .selection {
   font-family: $secondary-font;
   padding-top: 27px;
-  overflow-x: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 65px;
@@ -92,6 +91,7 @@
   @media (min-width: $tablet-width) {
     gap: 20px;
     width: 628px;
+
     &--space-bottom {
       margin-bottom: 72px;
     }
@@ -185,12 +185,10 @@
 
 .selection__form-name {
   display: flex;
-  display: flex;
   max-width: 100%;
   align-items: center;
   flex-shrink: 0;
 }
-
 
 .selection__form-radio-input:disabled + .selection__radio {
   opacity: 0.3;
@@ -204,12 +202,16 @@
   display: flex;
 }
 
+.selection__form-checkbox-input:focus-visible + .selection__checkbox {
+  outline: 2px solid $special-dark-grey;
+}
+
 .selection__radio {
   display: flex;
   align-items: center;
   gap: 15px;
   position: relative;
-  word-break: break-all ;
+  word-break: break-all;
 
   &:hover {
     &::before {
@@ -305,7 +307,6 @@
       left: 1px;
       width: 35px;
       height: 35px;
-
     }
   }
 }
@@ -384,24 +385,24 @@
   background-color: $basic-green;
 }
 
-.selection__input-mail--mail-icon:invalid + .selection__icon--validity::before {
+.selection__input-mail--mail-icon:user-invalid + .selection__icon--validity::before {
   background-color: $status-error;
 }
 
-.selection__input-mail--mail-icon:invalid {
-  border: 2px solid $status-error;
+.selection__input-mail--mail-icon:user-invalid {
+  outline: 2px solid $status-error;
 }
 
 .selection__form-input-phone--call-icon:focus + .selection__icon--call::before {
   background-color: $basic-green;
 }
 
-.selection__form-input-phone--call-icon:invalid + .selection__icon--call::before {
+.selection__form-input-phone--call-icon:user-invalid + .selection__icon--call::before {
   background-color: $status-error;
 }
 
-.selection__form-input-phone--call-icon:invalid {
-  border: 2px solid $status-error;
+.selection__form-input-phone--call-icon:user-invalid {
+  outline: 2px solid $status-error;
 }
 
 
@@ -437,7 +438,16 @@
   font-family: $secondary-font;
   color: $special-dark-grey;
   text-transform: uppercase;
-  border-color: #e7e7e7;
+  border: none;
+  outline: 1px solid #e7e7e7;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $special-dark-grey;
+  }
 
   @media (min-width: $tablet-width) {
     width: 628px;
@@ -473,7 +483,7 @@
   align-items: flex-start;
   padding: 0;
   gap: 13px;
-  margin: 0 0 34px 0;
+  margin: 0 0 31px 0;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -493,7 +503,6 @@
     margin: 0 0 60px 0;
   }
 }
-
 
 .selection__contacts-section {
   border: none;
@@ -585,7 +594,7 @@
   width: 280px;
   min-height: 40px;
   text-align: center;
-  margin-bottom: 18px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     width: 284px;

@@ -5,18 +5,20 @@
   height: 45px;
   width: 100%;
   text-transform: uppercase;
-  border: 1px solid #e7e7e7;
+  outline: 1px solid #e7e7e7;
+  border: none;
+  appearance: textfield;
 
-  &:invalid {
-    border: 2px solid $status-error;
+  &:user-invalid {
+    outline: 2px solid $status-error;
   }
 
   &:hover {
-    border-color: #cdcdcd;
+    outline: 1px solid #cdcdcd;
   }
 
   &:focus {
-    border-color: $special-dark-grey;
+    outline: 2px solid $special-dark-grey;
   }
 
 
@@ -25,4 +27,9 @@
     font-size: 20px;
     height: 52px;
   }
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  appearance: none;
 }

@@ -4,6 +4,10 @@
   line-height: 18px;
   text-transform: uppercase;
 
+  &:has(input:focus-visible) {
+    outline: 2px solid $special-dark-grey;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
