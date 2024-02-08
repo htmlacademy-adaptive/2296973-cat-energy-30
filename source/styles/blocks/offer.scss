@@ -1,15 +1,31 @@
 /* Cтили блока offer */
+.offer {
+  background-image: url("../../images/hero-cat-mobile@1x.webp");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  background-position: top;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+}
+
+
 .offer__wrapper {
   display: flex;
   flex-direction: column;
   font-family: $secondary-font;
   text-align: center;
-  background-image: url("../../images/hero-cat-mobile@1x.jpg");
+  background: linear-gradient(rgba(104, 183, 56, 0.85) 60%, #ffffff 60%);
   background-repeat: no-repeat;
-  background-size: 320px 302px;
   position: relative;
+  min-height: 500px;
+
 
   @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    background-color: $basic-white;
+    padding-top: 25px;
     background-image: none;
 
     &::after {
@@ -17,25 +33,9 @@
     }
   }
 
-
-  &::after {
-    content: "";
-    width: 320px;
-    left: 0;
-    height: 302px;
-    position: absolute;
-    background-color: rgba(104, 183, 56, 0.85);
-  }
-
-  @media (min-width: $tablet-width) {
-    align-items: flex-start;
-    background-color: $basic-white;
-    padding-top: 25px;
-  }
-
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
-    height: 580px;
+    min-height: 580px;
     background-color: transparent;
   }
 }

@@ -23,7 +23,7 @@
     padding-bottom: 0;
     display: flex;
     justify-content: space-between;
-    gap: 236px;
+    gap: 226px;
   }
 }
 
@@ -48,7 +48,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 90px;
+    margin-bottom: 93px;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,7 +72,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 148px;
+    margin: 0 0 146px;
   }
 }
 
@@ -87,7 +87,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 425px;
+    width: 434px;
+    margin: 0 0 82px;
   }
 }
 
@@ -109,7 +110,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 127px;
+    width: 130px;
     background-color: #eaeaea;
   }
 }
@@ -138,7 +139,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 28px 0 0;
+    margin: 0;
 
     &.example__statistics::before {
       bottom: 10px;

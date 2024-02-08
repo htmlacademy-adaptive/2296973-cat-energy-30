@@ -1,11 +1,16 @@
 /* Cтили блока label */
 .label {
   font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
-  white-space: nowrap;
+
+  &:has(input:focus-visible) {
+    outline: 2px solid $special-dark-grey;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    line-height: 20px;
     color: $special-dark-grey;
   }
 }
