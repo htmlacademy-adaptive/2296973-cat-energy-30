@@ -55,17 +55,6 @@
   }
 }
 
-.product__add {
-  display: grid;
-  min-height: 208px;
-  list-style: none;
-  padding: 25px 0 25px 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 50px 0 40px 0;
-  }
-}
-
 .catalog__even-wrap {
   position: relative;
   padding-top: 56px;
